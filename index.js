@@ -6,7 +6,7 @@ import { handler } from './build/handler.js';
 
 const app = express()
 const server = http.createServer(app);
-app.use(express.static('build'))
+app.use(express.static('build/client/'))
 
 // Inject SocketIO
 injectSocketIO(server);
