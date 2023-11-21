@@ -1,5 +1,5 @@
 // socketIoHandler.js
-import { Server } from 'socket.io';
+const { Server } = require("socket.io");
 
 export default function injectSocketIO(server) {
     const io = new Server(server);
